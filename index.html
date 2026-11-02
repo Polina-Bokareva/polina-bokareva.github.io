@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Полина Бокарева — ландшафтный архитектор</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <img src="assets/photo.jpg" alt="Полина Бокарева">
+    <div>
+      <h1>Привет, я Полина.</h1>
+      <p>Хочу работать ландшафтным архитектором.</p>
+      <p class="links">
+        <a href="files/portfolio.pdf" target="_blank">Портфолио (PDF)</a>
+        <a href="files/resume.pdf" target="_blank">Резюме</a>
+      </p>
+      <p class="contacts">
+        <a href="mailto:bokarevaps@yandex.ru">bokarevaps@yandex.ru</a>
+        <a href="#" id="phone">Показать телефон</a>
+        <a href="https://t.me/littlemogurl" target="_blank" rel="noopener" aria-label="Telegram" class="tg">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"/>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+        </a>
+      </p>
+    </div>
+    </main>
+  <script>
+    document.getElementById('phone').addEventListener('click', function (e) {
+      e.preventDefault();
+      var p = ['+7', '917', '540', '9003'];
+      this.textContent = p.join(' ');
+      this.href = 'tel:' + p.join('');
+    }, { once: true });
+  </script>
+</body>
+  
+</body>
+</html>
